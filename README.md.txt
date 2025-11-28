@@ -37,3 +37,6 @@ npm start
 cd client
 npm install
 npm run dev
+
+## 🎥 Demo Video
+[Click here to watch the project walkthrough](https://drive.google.com/file/d/1WUNehDz087TkFT4QnGoTQI3hVlWUYPMC/view?usp=sharing)
