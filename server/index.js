@@ -7,10 +7,13 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Routes
+// --- ROUTES IMPORTS ---
+const authRoutes = require('./routes/authRoutes'); // <--- CHECK THIS
 const employeeRoutes = require('./routes/employeeRoutes');
 const taskRoutes = require('./routes/taskRoutes');
 
+// --- USE ROUTES ---
+app.use('/api/auth', authRoutes); // <--- CHECK THIS (This connects /api/auth/login)
 app.use('/api/employees', employeeRoutes);
 app.use('/api/tasks', taskRoutes);
 
